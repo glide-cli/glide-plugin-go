@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ivannovak/glide-plugin-go/compare/v1.0.0...v1.0.1) (2025-11-25)
+
+
+### Bug Fixes
+
+* remove command registration from detector-only plugin ([9e3ee51](https://github.com/ivannovak/glide-plugin-go/commit/9e3ee5191b883d0537168e2c46759a50032b9f6e))
+
 ## 1.0.0 (2025-11-25)
 
 
