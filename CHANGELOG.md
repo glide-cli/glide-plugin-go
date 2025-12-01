@@ -1,3 +1,39 @@
+## [2.0.0](https://github.com/ivannovak/glide-plugin-go/compare/v1.0.1...v2.0.0) (2025-12-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* This plugin now requires Glide v2.4.0+ with SDK v2.
+
+Migration to SDK v2:
+- Replace v1.BasePlugin with v2.BasePlugin[Config]
+- Add type-safe Config struct with enableWorkspace/enableTools options
+- Update main.go to use v2.Serve()
+- Remove legacy grpc_plugin.go (v1 implementation)
+- Add configuration setters to GoDetector
+
+The plugin now uses the declarative SDK v2 pattern with:
+- Type-safe configuration via Go generics
+- Unified lifecycle management
+- Declarative metadata via Metadata() method
+
+Note: go.mod includes a replace directive pointing to local glide
+repo until v2.4.0 with SDK v2 is released.
+
+* feat!: upgrade to glide SDK v3.0.0
+* Updates module dependency from glide/v2 to glide/v3 v3.0.0.
+This aligns with the SDK v2 type-safe configuration system released in glide v3.0.0.
+
+- Update go.mod to require github.com/ivannovak/glide/v3 v3.0.0
+- Remove local replace directive (now using published version)
+- Update all imports from /v2/ to /v3/
+
+* style: fix gofmt alignment in detector_test.go
+
+### Features
+
+* upgrade to glide SDK v3.0.0 ([#1](https://github.com/ivannovak/glide-plugin-go/issues/1)) ([239fb36](https://github.com/ivannovak/glide-plugin-go/commit/239fb369fd4925d1f820eb9d6d55e0bb30def454))
+
 ## [1.0.1](https://github.com/ivannovak/glide-plugin-go/compare/v1.0.0...v1.0.1) (2025-11-25)
 
 
