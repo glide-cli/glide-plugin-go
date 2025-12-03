@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ivannovak/glide/v3/pkg/plugin/sdk"
+	"github.com/glide-cli/glide/v3/pkg/plugin/sdk"
 )
 
 // GoDetector detects Go projects and implements sdk.ContextExtension
